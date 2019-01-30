@@ -1,8 +1,23 @@
-body{
-    font-family: 'Lato', sans-serif;
-}
+/* Navigation und header*/
 header{
     text-align: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: white;
+}
+nav{
+    top: 0;
+}
+nav ul{
+    padding: 0px;
+}
+nav li{
+    display: inline;
+}
+header img{
+    width: 700px;
 }
 .dropbtn {
     background-color: rgb(165, 165, 165);
@@ -38,8 +53,10 @@ header{
   
 .dropdown:hover .dropbtn {background-color:  rgb(209, 209, 209)}
 
+
+/* Content */
 main{
-    margin: 0 150px 20px 150px;
+    margin: 300px 150px 20px 150px;
 }
 footer{
     background-color: rgb(209, 209, 209);
@@ -47,18 +64,27 @@ footer{
     text-align: center;
     clear: left;
 }
-.titel{
+h1 {
     font-size: 45px
 }
-nav li{
-    display: inline;
+body{
+    font-family: 'Lato', sans-serif;
 }
-.start{
-    width: 75%;
+
+/* Bilder */
+.kamera{
+    display: block;
     margin: 0 auto;
+    width: 200px; 
 }
-header img{
-    width: 700px;
+.films{
+    display: block;
+    margin: 0 auto;
+    width:100%;
+}
+video{
+    display:block;
+    margin: 0 auto;
 }
 .links{
     float:left;
@@ -75,7 +101,9 @@ header img{
 }
 .ci{
     height: 351px;
+    float: right;
 }
-nav ul{
-    padding: 0px;
+.fremdbild{
+    display: block;
+    margin:0 auto;
 }
