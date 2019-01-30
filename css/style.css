@@ -45,6 +45,7 @@ footer{
     background-color: rgb(209, 209, 209);
     padding: 50px 0;
     text-align: center;
+    clear: left;
 }
 .titel{
     font-size: 45px
@@ -52,4 +53,29 @@ footer{
 nav li{
     display: inline;
 }
-
+.start{
+    width: 75%;
+    margin: 0 auto;
+}
+header img{
+    width: 700px;
+}
+.links{
+    float:left;
+    width: 250px;
+    margin-right: 25px;
+}
+.rechts{
+    float: right;
+    height: 302px;
+}
+.marketing{
+    margin-left: 275px;
+    margin-top: 40px
+}
+.ci{
+    height: 351px;
+}
+nav ul{
+    padding: 0px;
+}
