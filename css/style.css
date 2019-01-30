@@ -55,6 +55,10 @@ header img{
 
 
 /* Content */
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
 main{
     margin: 300px 150px 20px 150px;
 }
@@ -67,9 +71,6 @@ footer{
 h1 {
     font-size: 45px
 }
-body{
-    font-family: 'Lato', sans-serif;
-}
 
 /* Bilder */
 .kamera{
@@ -78,9 +79,12 @@ body{
     width: 200px; 
 }
 .films{
-    display: block;
-    margin: 0 auto;
-    width:100%;
+    float: left;
+    width: 50%    
+}
+.films2{
+    float: right; 
+    width: 50%;
 }
 video{
     display:block;
@@ -90,10 +94,12 @@ video{
     float:left;
     width: 250px;
     margin-right: 25px;
+    margin-bottom: 15px;
 }
 .rechts{
     float: right;
     height: 302px;
+    margin-bottom: 15px;
 }
 .marketing{
     margin-left: 275px;
