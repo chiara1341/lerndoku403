@@ -12,6 +12,7 @@ header{
     border: none;
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
+    position: relative;
 } 
 .dropdown {
     position: relative;
@@ -47,5 +48,8 @@ footer{
 }
 .titel{
     font-size: 45px
+}
+nav li{
+    display: inline;
 }
 
