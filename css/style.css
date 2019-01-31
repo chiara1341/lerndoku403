@@ -52,6 +52,22 @@ header img{
 .dropdown:hover .dropdown-content {display: block;}
   
 .dropdown:hover .dropbtn {background-color:  rgb(209, 209, 209)}
+.scrolled {
+    min-height: 10px;
+    background: black;
+    transition: 0.35s all ease;
+  
+    ul {
+      padding: 1rem 2rem;
+      transition: 0.35s all ease;
+    }
+  
+    li {
+      color: white;
+      transition: 0.2s all ease-in-out;
+    }
+  }
+  
 
 
 /* Content */
@@ -70,9 +86,6 @@ footer{
 }
 h1 {
     font-size: 45px
-}
-figcaption{
-    width: 450px;
 }
 
 /* Bilder */
@@ -121,4 +134,10 @@ video{
 }
 .iso{
     width: 400px;
+    z-index: 10;
+}
+.blende{
+    width: 700px;
+    display: block; 
+    margin: 0 auto;
 }
