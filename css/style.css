@@ -32,6 +32,7 @@ nav li{
 .dropdown {
     position: relative;
     display: inline-block;
+    margin-top: auto;
 }
 .dropdown-content {
     display: none;
@@ -127,6 +128,32 @@ video{
     margin: 0 auto;
 }
 .smart{
-    width: 300px;
+    width: 400px;
     float: right;
 }
+.moodboard1, .moodboard2{
+    width: 500px;
+}
+.spannungsbogen{
+    width: 400px;
+    float: right;
+}
+
+/* Tabelle des Glossars */
+
+td{
+    padding: 5px 20px;
+    text-align: left;
+}
+th{
+    text-align: left;
+    padding: 5px 20px;
+}
+.grey{
+    background-color:  rgb(209, 209, 209);
+}
+table{
+    margin: 0 auto;
+}
+
+@media
