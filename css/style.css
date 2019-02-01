@@ -30,7 +30,19 @@ nav li{
     position: relative;
     width: 200px;
     margin-bottom: 3px;
-} 
+}
+.dropbtn_start {
+    background-color: rgb(165, 165, 165);
+    color: white;
+    padding: 16px 33px;
+    font-size: 16px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    position: relative;
+    width: 325px;
+    margin-bottom: 3px;
+}  
 .dropdown {
     position: relative;
     display: inline-block;
@@ -159,7 +171,7 @@ table{
         margin: 300px 80px 20px 80px;
     }
     header{
-        margin: 0 80;
+        margin: 0 80px;
     }
     .films{
         margin-top: 30px;
@@ -245,6 +257,9 @@ table{
     }
     .dropbtn{
         width: 100%;
+    }
+    .dropbtn_start{
+        width: 100%; 
     }
     nav li{
         display: block;
