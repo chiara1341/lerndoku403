@@ -4,33 +4,412 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lerndoku HTML</title>
     <link href="css/style.css" type="text/css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <title>Lerndokus</title>
 </head>
 <body>
     <header>
-        <h1>Lerndokumentationen des 1. Lehrjahres</h1>
+        <img src="images/html_css_logo.png" alt="HTML und CSS" class="logo" />
+        <h1 class="titel">101-Webauftritt gestalten</h1>
         <nav>
             <ul>
-                <li>
+                <li class="navigation">
                     <div class="dropdown">
-                        <form action="lerndoku101/index.html"><button class="dropbtn_start">ük 101<br />Webauftritt gestalten und realisieren</button></form>
+                        <button class="dropbtn">Internet</button>
+                            <div class="dropdown-content">
+                                <a href="#internet">Internet</a>
+                            </div>
                     </div>
                 </li>
-                <li>
+                <li class="navigation">
+                        <div class="dropdown">
+                            <button class="dropbtn">Entwicklungsumgebung</button>
+                                <div class="dropdown-content">
+                                    <a href="#entwicklungsumgebung">Entwicklungsumgebung</a>
+                                </div>
+                        </div>
+                    </li>
+                <li class="navigation">
                     <div class="dropdown">
-                        <form action="lerndoku403/index.html"><button class="dropbtn_start">ük 403<br />Multimediaprodukte erstellen</button></form>
+                        <button class="dropbtn">HTML</button>
+                            <div class="dropdown-content">
+                                <a href="#elemente">Elemente</a>
+                                <a href="#text">Text</a>
+                                <a href="#markup">Besonderse Markup</a>
+                                <a href="#listen">Listen</a>
+                                <a href="#formular">Formular</a>
+                                <a href="#flash">Flash, Video & Audio</a>
+                                <a href="#bilder">Bilder</a>
+                                <a href="#pfade">Pfade</a>
+                                <a href="#links">Links</a>
+                                <a href="#tabellen">Tabellen</a>
+                            </div>
                     </div>
                 </li>
+                <li class="navigation">
+                        <div class="dropdown">
+                            <button class="dropbtn">CSS</button>
+                                <div class="dropdown-content">
+                                    <a href="#css_einbinden">CSS einbinden</a>
+                                    <a href="#css_regeln">CSS Regeln</a>
+                                    <a href="#selektor">Selektor</a>
+                                    <a href="#text">Text</a>
+                                    <a href="#fonts">Fonts</a>
+                                    <a href="#farbe">Farbe</a>
+                                    <a href="#klaesten">Kästen</a>
+                                    <a href="#listen">Listen, Tabellen & Formulare</a>
+                                    <a href="#bilder">Bilder</a>
+                                    <a href="#box_model">Box Model</a>
+                                    <a href="#flexbox">Flexbox</a>
+                                    <a href="#media">Media Queries</a>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="navigation">
+                        <div class="dropdown">
+                            <button class="dropbtn">Praxis</button>
+                                <div class="dropdown-content">
+                                    <a href="#wireframe">Wireframe</a>
+                                    <a href="#Sitemap">Sitemap</a>
+                                    <a href="#layout">Layout in HTML</a>
+                                    <a href="#validierung">Validierung</a>
+                                    <a href="#testprotokoll">Testprotokoll</a>
+                                </div>
+                        </div>
+                    </li>
             </ul>
         </nav>
     </header>
     <main>
-
+        <h1>HTML</h1>
+        <h2 id="elemente"> Elemente</h2>
+        <p>Streng genommen besteht ein Element aus einem öffnenden und einem schliessenden Tag, und dem Inhalt, der dazwischensteht. Um einen öffnenden Tag korrekt zu schreiben verwendet man eine öffnende spitze Klammer(Kleiner-als-Zeichen) und eine schliessende spitze Klammer (Grösser-als-Zeichen). Zwischen diese beiden Klammern kommt ein Zeichen. Dieses bestimmt den Zweck des Tags. Ein schliessender Tag ist fast gleich aufgebaut mit dem Unterschied, dass nach der öffnenden spitzen Klammer ein Schrägstrich folgt /. Der Tag könnte folgendermassen aussehen: &lt;h1&gt; HTML &lt;/h1&gt;</p>
+        <p>Jedes Element und jeder Text, der geschrieben wird befindet sich zwischen dem HTML-Element. Dieser Tag besagt, dass alles was zwischen dem Tag stehet HTML-Code ist. Auf den &lt;html&gt;-Tag folgt der &lt;head&gt; in welchem Informationen über die Seite stehen. Nach dem &lt;head&gt; folgt der &lt;body&gt;. Alles was sich innerhalb des &lt;body&gt;-Elements befindet wird auf dem Hauptfenster des Browsers angezeigt.<br />
+        Für das Grundgerüst sind somit folgende Elemente notwendig: 
+        <ul class="elemente">
+            <li>&lt;html&gt;</li>
+            <li>&lt;head&gt;</li>
+            <li>&lt;body&gt;</li>
+        </ul>
+        Weitere Elemente, welche oft verwendet werden um die Übersicht einer Webseite zu fördern sind beispielsweise &lt;header&gt; und &lt;footer&gt;. Sie bilden einen Kopf- und Fussbereich oben und unten am Rand  der jeweiligen Webseite.<br />
+        <h2 id="text">Text</h2>
+        <p>Um einen Text übersichtlicher erscheinen zu lassen ist es hilfreich verschiedene Überschriften zu verwenden. Eine Überschriften wird mit Hilfe des &lt;h1&gt;-Elements erstellt. Neben &lt;h1&gt; gibt es weitere Überschriften, welche der Nummern nach aufsteigen.<br />
+        &lt;h1&gt; ist die Hauptüberschrift.<br />
+        &lt;h2&gt; wird als Zwischenüberschrift verwendet.<br />
+        Wird eine Überschrift benötigt, welche kleiner &lt;h2&gt; sein sollte wird &lt;h3&gt; und so weiter.<br />
+        Der Browser zeigt die Überschrift der einzelnen Ebenen in verschiedenen Grössen an. &lt;h1&gt; ist am grössten und die darauffolgenden werden immer kleiner.<br />
+        Um Ansätze zu erstellen, wie sie in einem normalen Textdokument mit Enter gemacht werden muss im HTML immer das Element &lt;p&gt;verwendet werden. Um eine Absatz zu erstellen, umgibt man die Worte, die ihn ausmachen, mit einem öffnenden &lt;p&gt;und einem schliessenden &lt;/p&gt;-Tag.<br />
+        Um Text im HTML zu formatieren gibt es einige Elemente. Grundsätzlich sollte dies jedoch im CSS gemacht werden.</p>
+        <table>
+            <tr>
+                <td>&lt;b&gt;</td>
+                <td>Fett</td>
+            </tr>
+            <tr>
+                <td>&lt;i&gt;</td>
+                <td>Kursiv</td>
+            </tr>
+            <tr>
+                <td>&lt;sup&gt;</td>
+                <td>Zahl hochstellen (Exponent)</td>
+            </tr>
+            <tr>
+                <td>&lt;sub&gt;</td>
+                <td>Zahl tiefstellen</td>
+            </tr>
+            <tr>
+                <td>&lt;br /&gt;</td>
+                <td>Um im Absatz einen Unterbruch zu verursachen und den Text auf eine neue Zeile schreiben</td>
+            </tr>
+            <tr>
+                <td>&lt;hr /&gt;</td>
+                <td>Horizontale Linie zwischen den eingefügten Abschnitten</td>
+            </tr>
+            <tr>
+                <td>&lt;strong&gt;</td>
+                <td>Text ist besonders wichtig und muss betont werden. Standartmässig zeigt der Browser den Text fett an.</td>
+            </tr>
+            <tr>
+                <td>&lt;em&gt;</td>
+                <td>Eine Hervorbebung andeuten. Standartmässig zeigt der Browser den Text kursiv an.</td>
+            </tr>
+            <tr>
+                <td>&lt;blockquote&gt;</td>
+                <td>Für ein Zitat, welches sich auf den ganzen Abschnitt bezieht.</td>
+            </tr>
+            <tr>
+                <td>&lt;q&gt;</td>
+                <td>Für ein Zitat, welches innerhalb des Absatzes verwendet wird.</td>
+            </tr>
+            <tr>
+                <td>&lt;cite&gt;</td>
+                <td>Um auf ein anders Werk zu verweisen. (Buch, Film, ...)</td>
+            </tr>
+            <tr>
+                <td>&lt;address&gt;</td>
+                <td>Für Adresse. Sei es E-Mail oder Telefonnummer</td>
+            </tr>
+            <tr>
+                <td>&lt;s&gt;</td>
+                <td>Kennzeichnet etwas, das nicht mehr stimmt aber trotzdem nicht gelöscht werden soll. Meist wird der Text durchgestrichen angezeigt.</td>
+            </tr>
+        </table>
+        <h2 id="markup">Besonderes Markup</h2>
+        <h3>Doctype</h3>
+        <p>Da es verschiedene Versionen von HTML gibt, sollte eine Webseite mit einer Dokumenttypdeklaration (DOCTYPE) beginnen, die dem Browser mitteilt, welche dieser Versionen verwendet wird.<br />
+        Will man einen Kommentar verfassen, welchen die Benutzer der Webseite nicht sehen sollten, stellt man den Text zwischen folgende Zeichen: &lt;!-- Hier kommentieren--&gt;. Einen Code zu kommentieren ist sehr sinnvoll, denn es kann sein, dass man die Übersicht verliert und mithilfe der Kommentare ist das Verständnis klarer.</p>
+        <h3>Attribut</h3>
+        <p>Man kann jedem HTML-Element eine ID zuweisen. Dies führt dazu, dass das Element von den anderen Elementen unterscheidet werden kann. Wichtig ist, dass der Arttributwert mit einem Buchstaben oder Unterstrich beginnt. Ausserdem auf einer Seite zwei oder mehr Elemente den selben id Wert haben. Sonst ist der Wert nicht eindeutig.</p>
+        <p>Neben dem Attribut id gibt es ebenfalls das Attribut class. In manchen Situationen ist es notwendig mehrere Elemente zu markieren, um sie auf dieselbe Art und Weise von den restlichen Elementen abzuheben. </p>
+        <h3>Block oder Inline-Element</h3>
+        <p>Einige Elemente beginnen bei der Anzeige im Browserfenster immer in einer neuen Zeile. Solche Elemente werden Blockelemente genannt. Neben den Blockelementen gibt es ebenso Inline-Elemente. Inline-Elemente stehen in ein und derselben Zeile wie ihre Nachbarelemente. </p>
+        <table>
+            <tr>
+                <th>Blockelement</th>
+                <th>Inline-Element</th>
+            </tr>
+            <tr>
+                <td>&lt;h1&gt;</td>
+                <td>&lt;a&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>&lt;b&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;ul&gt;</td>
+                <td>&lt;em&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;li&gt;</td>
+                <td>&lt;img&gt;</td>
+            </tr>
+        </table>
+        <h3>Zu Blöcken gruppieren</h3>
+        <p>Um mehrere Elemente zu einem Block zu gruppieren benötigt es das Element &lt;div&gt;. Wenn dieser &lt;div&gt; eine class- oder id-Attribut hinzugefügt wird, kann man CSS-Regeln erstellen. Durch die Gruppierung mit &lt;div&gt; werden die verschiedenen Elemente wie Blockelemente angeordnet. Nicht nur die Formatierung kann geändert werden, sondern auch die Übersichtlichkeit wird gefördert.</p>
+        <h3>Zu Inline gruppieren</h3>
+        <p>Mit dem Element &lt;span&gt;können Texte zu Inline-Elementen gruppieren. Sozusagen geschieht gerade das Gegenteil, wie wenn man Elemente mit &lt;div&gt; gruppiert</p>
+        <h3>&lt;iframe&gt;</h3>
+        <p>Das Verhalten eines iFrame, ist wie bei einem kleinen Fenster, welches in die Seite geschnitten wurde und in dem eine andere Seite sichtbar wird. iFrame ist die Abkürzung für Inline-Frame. Am häufigsten werden iFrames für Karten genutzt um sie von Google Maps einzubetten. Um einen iFrame einzubetten braucht es noch einige zusätzliche Attribute.
+            <ul>
+                <li>src <br />Das Attribut src gibt den URL der Seite an, die in dem Frame angezeigt werden soll.</li>
+                <li>height<br />Das Attribut height gibt die Höhe des iFrames in Pixeln an.</li>
+                <li>width<br />Das Attribut width gibt die Breite des iFrames in Pixeln an.</li>
+            </ul>
+        <h2 id="listen">Listen</h2>
+        <h3>Geordnete Listen</h3>
+        <p>Geordnete Listen werden mit dem Element &lt;ol&gt; erstellt. Ein Eintrag muss zwischen den offenen Tag &lt;li&gt; und &lt;/li&gt;geschrieben werden. <br />
+            Dies könnte folgendermassen aussehen:<br /></p>
+            &lt;ol&gt;<br />
+            <div class="code" >&lt;li&gt;Aufstehen&lt;/li&gt;<br />
+            &lt;li&gt;Anziehen&lt;/li&gt;<br />
+            &lt;li&gt;Frühstücken&lt;/li&gt;<br />
+            &lt;li&gt;Zähne putzen&lt;/li&gt;<br />
+            </div>
+            &lt;/ol&gt;
+        <ol>
+            <li>Aufstehen</li>
+            <li>Anziehen</li>
+            <li>Frühstücken</li>
+            <li>Zähne putzen</li>
+        </ol>
+        <h3>Ungeordnete Listen</h3>
+        <p>Um eine ungeordnete Liste zu erstellen verwendet man das Element&lt;ul&gt;. Wie bei den geordneten Listen werden Listeneinträge mit &lt;li&gt; gemacht. Der Eintrag muss zwischen einem öffnenden Tag &lt;li&gt; und einem schliessendem &lt;/li&gt; stehen. Der grundlegende Unterschied ist, das anstelle der Zahlen Aufzählungspunkte erscheinen</p>
+        <h3>Definitionsliste</h3>
+        <p>Eine weitere Variante um eine Liste zu erstellen ist die Definitionslist. Diese wird mit dem Element &lt;dl&gt; erstellt. Innerhalb dieses &lt;dl&gt;-Elements stehen normalerweise zwei weitere Elemente: &lt;dt&gt; und &lt;dd&gt;. Das &lt;dt&gt;-Element steht der Begriff, welcher erklärt werden muss. Der Tag &lt;dd&gt; enthaltet die Definition.</p>
+        <h3>Verschachtelte Listen</h3>
+        <p>Grundsätzlich sind verschachtelte Listen eine Liste, welche eine weitere Liste enthaltet. Verschachtelte Listen sind ungeordnete Listen.<br/>
+        Dies sieht folgendermassen aus:<br /></p>
+        &lt;ul&gt;<br />
+        <div class="code" >
+            &lt;li&gt;Cremspeisen&lt;/li&gt;<br />
+            &lt;li&gt;Süssgebäck<br />
+                <div class="code2">
+                &lt;ul&gt; <br />
+                    <div class="code3">
+                    &lt;li&gt;Croissants&lt;/li&gt;<br />
+                    &lt;li&gt;Profiteroles&lt;/li&gt;<br />
+                    </div>
+            &lt;/ul&gt;<br />
+            </div>
+            &lt;/li&gt;
+        </div>
+        &lt;/ul&gt;
+        <ul>
+            <li>Cremspeisen</li>
+            <li>Süssgebäck
+            <ul>
+            <li>Croissants</li>
+            <li>Profiteroles</li>
+            </ul>
+            </li>
+        </ul>
+        <h2 id="formualr">Formular</h2>
+            <h3>&lt;form&gt;</h3>
+                Formulare werden nicht nur für Suchvorgange verwendet, sondern auch wenn man sich auf einer Webseite neu registriert und ein Formular ausfüllen muss. Um ein Formularsteuerelement zu erstellen wird das Element &lt;form&gt;. Es muss über das Attribut action verfügen und normalerweise werden zusätzlich die Attribute <b>method</b> und <b>id</b> verwendet.<br />
+                action: Der Wert von action ist die URL der Seite, auf den die Informationen gesendet werden, wenn ein Formular ausgefüllt wurde.<br />
+                method: Die Art wie das Formular gesendet wird kann unterschieden werden. Zum einen gibt es get bei welchem die Informationen des Formulars am Ende der angegebenen URL angehängt werden. Dies ist ideal für kurze Formulare. Die andere Variante ist post. Die Werte des Formulars werden in HTTP-Headers gesendet. In Formularen, in denen man Dateien hochladen muss, lange Formulare und welchen mit sensiblen Daten. Wurde keine Methode angegeben werden die Informationenmit get gesendet.<br />
+                id: Es wird für die Spezifikation des Wertes verwendet.<br />
+            <h3>Texteingabe</h3>
+                <p>Mit dem Tag &lt;input&gt; werden unterschiedliche Formularsteuerelement erstellt, deren Art durch den Wert des Attributs type bestimmt werden.<br />
+                Hat das Attribut type den Wert text, wird ein einzeiliges Textfeld erstellt. Hat es den Wert password wird ein Textfeld erstellt, das die eingegebenen Zeichen nicht anzeigt und somit für Passwörter eignet.<br />
+                Das Attribut name wird verwendet, dass der Server weiss, welches Formularsteuerelement zu welchen Daten gehören. Der Wert des Attributs ist das Steuerelement.<br />
+                Mit dem Attribut maxlength kann angegeben werden, wie viele Zeichen maximal in ein Feld eingetragen werden dürfen.<br />
+                Soll ein Textfeld erstellt werden, welches mehrere Zeilen enthalten sollte muss das Element &lt;textarea&gt; verwendet werden. Anders als die anderen Eingabeelemente verfügt diese Element über ein öffnendes und ein schliessendes Tag und ist somit kein leeres Element. Wird Text zwischen diese zwei Tags geschrieben wird dieser im Textfeld angezeigt, wenn die Seite ladet. Bevor ein Benutzer jedoch Text eingeben kann muss dieser den vorgegebenen Text löschen, sonst wird er mitgesendet.<br /></p>
+                <p>Code:<br />
+                &lt;form action=&quot;http://www.example.com/login.php&quot;&gt;<br /> 
+                    <div class="code">
+                        &lt;p&gt;Benutzername: <br />
+                            <div class="code2">
+                                &lt;input type=&quot;text&quot; name=&quot;username&quot; size=&quot;15&quot; maxlength=&quot;30&quot; /&gt;<br />
+                            </div>
+                        &lt;/p&gt;<br />
+                    </div>
+                 &lt;/form&gt;<br />
+                 Ergebnis:
+                 <form action="http://www.example.com/login.php">
+                    <p>Benutzername:
+                            <input type="text" name="username" size="15" maxlength="30" />
+                        </p>
+                    </form>
+                                    
+                <h3>Radio-Buttons</h3>
+                Hat das Attribut type den Wert radio werden Radio-Buttons erstellt, welche mehrere Optionen zur Auswahl geben. Mit dem Attribut value können die Auswahloptionen angegeben werden, welche an den Server gesendet werden. Das Attribut checked ist dafür zuständig, dass ausgewählt werden kann, welche Option beim Laden der Seite ausgewählt sein sollte. In einer Gruppe von Radio-Buttons kann höchstens einer dieses Attribut aufweisen.
+                <form action="http://www.example.com/profile.php">
+                    <p>Wählen Sie aus:
+                        <br   />
+                            <input type="radio" name="genre" value ="rock" checked="checked" /> Rock
+                    <input type="radio" name="genre" value ="pop" /> Pop
+                        </p>
+                    </form>
+                    
+                <h3> Checkboxen</h3>
+                Neben den Radio-Buttons gibt es ebenfalls die Checkboxen. Der Unterschied ist, dass man bei Checkboxen mehrere Optionen wählen kann und es bei Radio-Buttons nur eine Option gibt. Die Checkbox wird mit dem Attribut type="checkbox" erstellt. Gleich wie bei den Radio-Buttons gibt es ebenfalls das Attribut checked um eine Vorauswahl zu treffen, wenn die Seite neu geladen wird. Um bei der gewünschten Option die Vorauswahl anzeigen zu lassen muss man dem Attribut checked den Wert checked geben. (checked="checked")
+                <form action="http://www.example.com/login.php">
+                    <p>Wählen Sie aus:
+                    <br />
+                    <input type="checkbox" name="service" value ="itunes" checked="checked" /> iTunes
+                    <input type="checkbox" name="service" value ="spotify" /> Spotify
+                        </p>
+                    </form>
+                <h3>Dropdownlisten</h3>  
+                <p>Dropdownlisten geben die Möglichkeit eine Option aus einer Liste auszuwählen. Sie sind ähnlich wie die Radio-Buttons, da es ebenfalls nur eine Option zum Auswählen gibt. Der wesentliche Unterschied lieg darin, ob die Benutzer alle Optionen auf einen Blick sehen sollten oder lieber nicht.</p>
+                    <form action="http://www.example.com/login.php">
+                        <p>Auf was für einem Gerät hören Sie Musik? </p>
+                        <select name="devices">
+                            <option value="radio">Radio</option>
+                            <option value="computer">Computer</option>
+	                    </select>
+                    </form>
+                <h3>Mehrfachauswahllisten</h3>
+                <p>Des Weiteren gibt es noch die Mehrfachauswahllisten. Diese ähneln der Dropdownliste, doch mit dem Attribut «size» kann zusätzlich eingerichtet werden, wie viele Optionen gleichzeitig untereinander angezeigt werden, beispielsweise drei von vier. Wenn das Attribut «multiple» eingesetzt wird und diesem den Wert „multiple“ gegeben wird, können auch mehrere Optionen angewählt werden. Hierzu muss die Taste "Strg" beziehungsweise die "Befehl"-Taste, bei einem Mac, bei der Auswahl betätigt werden.</p>
+                    <form action="http://www.example.com/login.php">
+                        <p>Auf was für einem Gerät hören Sie Musik?</p>
+                            <select name="devices" size="3" multiple="multiple" >
+                                <option value="radio" selected="selected">Radio</option>
+                                <option value="computer">Computer</option>
+                                <option value="handy">Handy</option>
+                        </select>
+                    </form>
+                <h3>Dateieingabefeld</h3>
+                Ein Dateiupload ermöglicht den Benutzern, Dateien (z.B. Bilder) auf eine Webseite hochzuladen. Hierzu wird das Dateieingabefeld benötigt.<br />
+                Wenn der Benutzer die Möglichkeit haben soll, eine Datei hochzuladen, braucht man das Dateieingabefeld, also ein &lt;input&gt;-Element. Das Attribut «type» mit dem Wert „file“ verursacht das erscheinen einer Schaltfläche zur Dateiauswahl. Klickt der Benutzer auf diese, öffnet sich ein Fenster, indem er die Dateien auswählen kann. <br />
+                Mit dem type="submit" entsteht eine Sendeschaltfläche, die das Formular oder die Dateien an den Server überträgt. Die Schaltfläche kann mit dem Attribut «value» nach Belieben beschriftet werden. <br />
+                    <form action="http://www.example.com/login.php" method="post">
+                    <p>Laden Sie Ihr Lied im MP3-Format hoch:</p>
+                    <input type="file" name="user-song" /> <br />
+                    <input type="submit" value ="Hochladen" /> 
+                    </form>
+                <h3>Sendeschaltfläche</h3>
+                Durch eine Sendeschaltfläche werden die Daten aus dem Formular bei einer Webseite eingereicht. Es funktioniert ähnlich wie ein Dateiupload.
+                    <form action="http://www.example.com/login.php">
+                        <p>Registrieren Sie sich mit Ihrer E-Mail-Adresse:</p>
+                        <input type="text" name="email" /> 
+                        <input type="submit" value ="Registrieren" /> 
+                    </form>
+                Eine Bildschaltfläche funktioniert nach demselben Prinzip, nur kann zur Gestaltung ein Bild verwendet werden. Der einzige Unterschied liegt darin, dass statt dem Wert type="submit" der Wert "image" verwendet wird. Natürlich wird dahinter eine Bildquelle angegeben und eine Grösse eingestellt.
+                    <form action="http://www.example.com/login.php">
+                        <p>Registrieren Sie sich mit Ihrer E-Mail-Adresse:</p>
+                        <input type="text" name="email" /> 
+                        <input type="image" src="images/subscribe.png" width="200" height="60" /> 
+                    </form>
+                <h3>Versteckte Steuerelemente</h3>
+                <p>Das Element &lt;button&gt; wurde eingeführt, um der Schaltfläche ein spezielleres Erscheinungsbild zu geben, indem Text und Bild kombiniert werden.<br />
+                Der &lt;input&gt; ist mit dem Attributwert type="hidden" angelegt. Das bedeutet, es ist ein verborgenes Formularsteuerelement enthalten, das nur für den Autor der Webseite sichtbar ist, nicht aber für den Benutzer.</p>
+                    <form action="http://www.example.com/login.php">
+                        <button> <img src="images/add.png" alt="add" width="10" height="10" /> Hinzufügen </button>
+                        <input type="hidden" name="bookmark" value="lyrics" />
+                    </form>
+                <h3>Formularsteuerelemente beschriften</h3>
+                <p>Formularsteuerelemente können mit dem &lt;label&gt;-Element beschriftet werden, sodass die Webseite auch für sehbehinderte Benutzer zugänglich ist. Dieses Element kann einerseits sowohl die Beschriftung, als auch das Steuerelement einschliessen (siehe Zeile 1 des Beispiels), andererseits kann es auch unabhängig von dem Steuerelement im Code stehen. Dann wird mit dem Attribut «for» angegeben, zu welchem Steuerelement die Beschriftung gehört (siehe Radio-Buttons). Der Wert des Attributs «for» ist der «id»-Wert des Steuerelements zu dem die Beschriftung gehört.</p>
+                        <label>Alter: <input type="text" name="age"  />
+                        </label> <br   />
+                        Geschlecht:
+                        <input id="female" type="radio" name="gender" value="f">
+                        <label for="female">Weiblich</label>
+                        <input id="male" type="radio" name="gender" value="m">
+                        <label for="male">Männlich</label>
+                <h3>Formularelemente gruppieren</h3>  
+                Um Formularsteuerelemente zu gruppieren, benötigt man das Element &lt;fieldset&gt;.  Zusammengehörige Steuerelemente werden so zusammengefasst und eine feine Linie um die enthaltenen Elemente angezeigt. Direkt hinter dem öffnenden &lt;fieldset&gt;-Tag kann das Element &lt;legend&gt; stehen. Es enthält eine Beschriftung, die den Zweck dieser Gruppe von Formularsteuerelementen angibt.
+                    <fieldset>
+                        <legend>Kontaktmöglichkeiten</legend>
+                            <label>E-Mail: <br   />
+                            <input type="text" name="email"   /> </label> <br   />
+                            <label>Mobiltelefon: <br   />
+                            <input type="text" name="mobile"   /> </label> <br   />
+                            <label>Telefon: <br   />
+                        <input type="text" name="telephone"   /> </label> <br   />
+                    </fieldset>
+                <h3>Formularvalidierung</h3>
+                Wird ein Formular falsch ausgefüllt, kann die Formularvalidierung dem Benutzer eine direkte Rückmeldung geben und so ein fehlerhaftes Absenden an den Server verhindert werden. 
+                    <form action="http://www.example.com/login/"  method="post">
+                        <label for="username">Benutzername:</label>
+                        <input type="text" name="username" Required="required"  /> <br  />
+                        <label for="password">Passwort:</label>
+                        <input type="password" name="password" Required="required"  /> 
+                        <input type="submit" value="senden"  />
+                    </form>
+                <h3>Datumeingaben</h3>
+                Für Datumseingaben kann, falls kein gewöhnliches Texteingabefeld verwendet werden soll, ein &lt;input&gt;-Element mit dem Wert „date“ für das Attribut «type» eingesetzt werden. Es entsteht dadurch ein Datumseingabefeld.
+                    <form action="http://www.example.com/bookings/"  method="post">
+                        <label for="username"> Abreisedatum:</label>
+                        <input type="date" name="depart"  />
+                        <input type="submit" value="Senden"  />
+                    </form>
+                <h3>E-Mail-Adressen & URL</h3>
+                Für die Eingabe von E-Mail-Adressen und URLs kann durch ein passendes Eingabefeld mit dem &lt;input&gt;-Element und dem Attribut «type» eingerichtet werden. Durch eine HTML5-Validierung wird die Eingabe geprüft und falls sie im falschen Format vorliegt, gibt der Browser eine Fehlermeldung an den Benutzer weiter.<br />
+                E-Mail: type="email"<br />
+                URL: type="url"<br />
+                    <form action="http://www.example.org/subscribe.php" >
+                        <p>Bitte geben Sie Ihre E-Mail-Adresse ein:</p>
+                            <input type="email" name="email"  />
+                            <input type="submit" value="Senden"  />
+                    </form>
+                <h3>Suchfelder</h3>
+                Suchfelder können ebenfalls durch ein &lt;input&gt;-Element und das Attribut «type» mit dem Wert „search“ erstellt werden. Bei einem Texteingabeelement kann das Attribut «placeholder» verwendet werden, dessen Inhalt angezeigt wird, bis der Benutzer darauf klickt.
+                    <form action="http://www.example.org/subscribe.php" >
+                        <p>Suchen:</p>
+                            <input type="search" name=" search "  />
+                            <input type="submit" value="Senden"  />
+                        </form>
+        <h2 id="flash">Flash, Video & Audio</h2>
+            <h3>Flash</h3>
+            <P>Am  häufigsten wird Flash mit JavaScript in Webseiten aufgenommen. Es gibt verschiedene Skripts, mit denen man dies tun  können, ohne viel von JavaScript verstehen zu müssen. </P>
+        <h2 id="bilder">Bilder</h2>
+        Um ein Bild zu einer Seite hinzuzufügen, verwendet man das Element &lt;img&gt;. Dies ist ein leeres Element. src, alt und title müssen als Attribut enthalten sein. 
+        <ul>
+            <li>src: Das Attribut src wir für die Angabe der URL verwendet. </li>
+            <li>alt: In seltenen Fällen wird das Bild nicht angezeigt. Für solche Fälle wird mit dem Attribut alt das Bild in Text beschrieben. Es ist ebenfalls wichtig für die Suchmaschienen Optimierung und für Programme, welche die Webseite vorlesen, wenn jemand blind ist. </li>
+            <li>titel: Im Element &lt;img&gt; kann das Attribut titel verwendet werden, um zusätzliche Informationen über das Bild anzugeben. </li>
+        </ul>
+        Wird ein Bild vor dem Absatz platziert wird es vor dem Absatz angezeigt. Ist es am am Anfang des Absatzes platziert wird das Bild mit der unteren Kante auf der ersten Zeile platziert. Ist der Code des Bildes mitten im Abschnitt platziert erscheint es mitten in den Wörter.
+        <h2 id="pfade">Pfade</h2>
+        <h2 id="links">Links</h2>
+        <h2 id="tabellen">Tabellen</h2>
     </main>
     <footer>
-            &copy; 2019 Webseite designed by Chiara Schweizer
+        &copy; 2019 Webseite designed by Chiara Schweizer
     </footer>
 </body>
 </html>
